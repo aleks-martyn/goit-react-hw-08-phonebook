@@ -32,7 +32,8 @@ const handleFulfilledAddContact = (state, { payload }) => {
 const handleFulfilledDeleteContact = (state, { payload }) => {
   state.isLoading = false;
   state.error = null;
-  state.items = state.items.filter(({ id }) => id !== payload.id);
+  const index = state.items.findIndex(contact => contact.id === payload.id);
+  state.items.splice(index, 1);
 };
 
 const handleFulfilledLogOut = state => {
