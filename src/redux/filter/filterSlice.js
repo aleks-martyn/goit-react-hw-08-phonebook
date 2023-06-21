@@ -5,9 +5,7 @@ const filterSlice = createSlice({
   name: 'filter',
   initialState: '',
   reducers: {
-    setFilter(state, { payload }) {
-      return payload;
-    },
+    setFilter: (state, { payload }) => (state = payload),
   },
   extraReducers: builder => {
     builder.addCase(logOut.fulfilled, state => (state = ''));
