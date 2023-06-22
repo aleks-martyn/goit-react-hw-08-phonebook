@@ -40,9 +40,13 @@ const authSlice = createSlice({
       .addCase(register.fulfilled, handleFulfilledRegister)
       .addCase(logIn.fulfilled, handleFulfilledLogIn)
       .addCase(logOut.fulfilled, handleFulfilledLogOut)
-      .addCase(refreshUser.pending, state => (state.isRefreshing = true))
+      .addCase(refreshUser.pending, state => {
+        state.isRefreshing = true;
+      })
       .addCase(refreshUser.fulfilled, handleFulfilledRefreshUser)
-      .addCase(refreshUser.rejected, state => (state.isRefreshing = false));
+      .addCase(refreshUser.rejected, state => {
+        state.isRefreshing = false;
+      });
   },
 });
 
