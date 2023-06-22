@@ -23,7 +23,7 @@ const handleFulfilledLogIn = (state, { payload }) => {
 const handleFulfilledLogOut = state => {
   state.user = { name: null, email: null };
   state.token = null;
-  state.isLoaggedIn = false;
+  state.isLoggedIn = false;
 };
 
 const handleFulfilledRefreshUser = (state, { payload }) => {
