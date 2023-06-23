@@ -3,8 +3,8 @@ import styled from '@emotion/styled';
 export const Form = styled.form`
   display: inline-flex;
   flex-direction: column;
+  width: 300px;
   padding: 20px;
-  padding-right: 200px;
   border: 1px solid #000;
 `;
 
