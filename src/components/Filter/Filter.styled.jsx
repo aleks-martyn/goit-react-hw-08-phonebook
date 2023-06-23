@@ -1,5 +1,10 @@
 import styled from '@emotion/styled';
 
+export const Wrap = styled.div`
+  width: 300px;
+  padding: 20px;
+`;
+
 export const FilterLabel = styled.label`
   display: inline-flex;
   flex-direction: column;
