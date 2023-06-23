@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchContacts } from 'redux/operations';
+import { fetchContacts } from 'redux/contacts/operations';
 import {
   selectFilteredContacts,
   selectIsLoading,
   selectError,
-} from 'redux/selectors';
+} from 'redux/contacts/selectors';
 import { ContactListItem } from 'components/ContactListItem';
 import { List } from './ContactList.styled';
 
