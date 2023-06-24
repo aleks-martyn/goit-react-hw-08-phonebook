@@ -27,8 +27,9 @@ export const RegisterForm = () => {
           type="text"
           name="name"
           label="Name"
-          id="outlined-basic"
+          id="name-register"
           variant="outlined"
+          required
         />
       </Label>
       <Label>
@@ -36,8 +37,9 @@ export const RegisterForm = () => {
           type="email"
           name="email"
           label="Email"
-          id="outlined-basic"
+          id="email-register"
           variant="outlined"
+          required
         />
       </Label>
       <Label>
@@ -45,8 +47,9 @@ export const RegisterForm = () => {
           type="password"
           name="password"
           label="Password"
-          id="outlined-basic"
+          id="password-register"
           variant="outlined"
+          required
         />
       </Label>
       <Button variant="contained" type="submit">
