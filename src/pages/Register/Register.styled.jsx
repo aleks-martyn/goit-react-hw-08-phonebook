@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 
+
 export const Container = styled.div`
   width: 1000px;
   min-height: calc(100vh - 50px);
