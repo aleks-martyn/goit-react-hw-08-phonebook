@@ -14,5 +14,5 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   margin: 0;
-  color: teal;
+  color: #1976d2;
 `;
