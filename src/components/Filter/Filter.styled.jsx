@@ -14,4 +14,5 @@ export const FilterLabel = styled.label`
 export const Text = styled.span`
   font-size: 17px;
   font-weight: 500;
+  color: #212121;
 `;
