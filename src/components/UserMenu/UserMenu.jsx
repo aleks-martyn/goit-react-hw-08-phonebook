@@ -11,7 +11,11 @@ export const UserMenu = () => {
   return (
     <Wrap>
       <p>Welcome, {user.name}</p>
-      <Button type="button" onClick={() => dispatch(logOut())} variant="contained" >
+      <Button
+        type="button"
+        onClick={() => dispatch(logOut())}
+        variant="contained"
+      >
         Logout
       </Button>
     </Wrap>
