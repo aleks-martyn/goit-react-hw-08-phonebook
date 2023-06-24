@@ -10,3 +10,7 @@ export const Container = styled.div`
   padding-right: 15px;
   text-align: center;
 `;
+
+export const Title = styled.h2`
+  color: #212121;
+`;
